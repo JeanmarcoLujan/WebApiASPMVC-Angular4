@@ -1,0 +1,11 @@
+<table class="table table-sm table-hover">
+	<tr *ngFor="let provider of providerService.providersList">
+		<td>{{ provider.Ruc }}</td>
+		<td>{{ provider.Proveedor1 }}</td>
+		<td>{{ provider.RazonSocial }}</td>
+		<td width="30%">
+			<a class="btn btn-primary" (click)="showForEdit(provider)" >Editar</a>
+			<a class="btn btn-danger" (click)="onDelete(provider.Proveedor1)">Eliminar</a>
+		</td>
+	</tr>
+</table>
